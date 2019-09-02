@@ -98,4 +98,6 @@ PRODUCT_PACKAGES += \
     CNEService \
     dpmserviceapp \
     ims \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    QPerformance \
+    UxPerformance
