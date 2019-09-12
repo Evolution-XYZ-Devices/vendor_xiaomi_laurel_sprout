@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qti_libpermissions.xml:system/product/etc/permissions/qti_libpermissions.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qti_permissions.xml:system/product/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/telephonyservice.xml:system/product/etc/permissions/telephonyservice.xml \
-    vendor/xiaomi/laurel_sprout/proprietary/etc/sysconfig/qti_whitelist.xml:system/product/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/laurel_sprout/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/laurel_sprout/proprietary/framework/cneapiclient.jar:system/product/framework/cneapiclient.jar \
     vendor/xiaomi/laurel_sprout/proprietary/framework/com.quicinc.cne.jar:system/product/framework/com.quicinc.cne.jar \
     vendor/xiaomi/laurel_sprout/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.0-java \
