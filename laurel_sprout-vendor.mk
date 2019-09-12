@@ -19,10 +19,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/com.quicinc.cne.xml:system/product/etc/permissions/com.quicinc.cne.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
-    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/privapp-permissions-qti.xml:system/product/etc/permissions/privapp-permissions-qti.xml \
+    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/telephony_product_privapp-permissions-qti.xml:system/product/etc/permissions/telephony_product_privapp-permissions-qti.xml \
+    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qcrilhook.xml:system/product/etc/permissions/qcrilhook.xml \
-    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qti_libpermissions.xml:system/product/etc/permissions/qti_libpermissions.xml \
-    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qti_permissions.xml:system/product/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
+    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/telephonyservice.xml:system/product/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/laurel_sprout/proprietary/framework/cneapiclient.jar:system/product/framework/cneapiclient.jar \
