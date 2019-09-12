@@ -17,6 +17,8 @@
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/cneapiclient.xml:system/product/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/com.quicinc.cne.xml:system/product/etc/permissions/com.quicinc.cne.xml \
+    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+    vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:system/product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/privapp-permissions-qti.xml:system/product/etc/permissions/privapp-permissions-qti.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qcrilhook.xml:system/product/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/laurel_sprout/proprietary/etc/permissions/qti_libpermissions.xml:system/product/etc/permissions/qti_libpermissions.xml \
@@ -25,6 +27,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/etc/sysconfig/qti_whitelist.xml:system/product/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/laurel_sprout/proprietary/framework/cneapiclient.jar:system/product/framework/cneapiclient.jar \
     vendor/xiaomi/laurel_sprout/proprietary/framework/com.quicinc.cne.jar:system/product/framework/com.quicinc.cne.jar \
+    vendor/xiaomi/laurel_sprout/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.0-java \
+    vendor/xiaomi/laurel_sprout/proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/product/framework/com.qualcomm.qti.imscmservice-V2.1-java \
     vendor/xiaomi/laurel_sprout/proprietary/framework/qti-telephony-common.jar:system/product/framework/qti-telephony-common.jar \
     vendor/xiaomi/laurel_sprout/proprietary/framework/QtiTelephonyServicelibrary.jar:system/product/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/laurel_sprout/proprietary/framework/qcrilhook.jar:system/product/framework/qcrilhook.jar \
@@ -32,9 +36,23 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/lib/fm_helium.so:system/lib/fm_helium.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib/libfm-hci.so:system/lib/libfm-hci.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/soundfx/libvolumelistener.so:system/lib64/soundfx/libvolumelistener.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/product/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/com.qualcomm.qti.imscmservice@2.0.so:system/product/lib64/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/com.qualcomm.qti.imscmservice@2.1.so:system/product/lib64/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/product/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/product/lib64/com.quicinc.cne.server@1.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/fm_helium.so:system/lib64/fm_helium.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/libfm-hci.so:system/lib64/libfm-hci.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/libimscamera_jni.so:system/product/lib64/libimscamera_jni.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/libimsmedia_jni.so:system/product/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/lib-imsvideocodec.so:system/product/lib64/lib-imsvideocodec.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/lib-imsvt.so:system/product/lib64/lib-imsvt.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/lib-imsvtextutils.so:system/product/lib64/lib-imsvtextutils.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/lib-imsvtutils.so:system/product/lib64/lib-imsvtutils.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/libsdm-disp-apis.so:system/product/lib64/libsdm-disp-apis.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.display.color@1.0.so:system/product/lib64/vendor.display.color@1.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.display.color@1.1.so:system/product/lib64/vendor.display.color@1.1.so \
@@ -42,6 +60,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.display.color@1.3.so:system/product/lib64/vendor.display.color@1.3.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/product/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.latency@2.0.so:system/product/lib64/vendor.qti.latency@2.0.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.ims.callinfo@1.0.so:system/product/lib64/vendor.qti.ims.callinfo@1.0.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.ims.rcsconfig@1.0.so:system/product/lib64/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/product/lib64/vendor.qti.imsrtpservice@1.0.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.radio.ims@1.0.so:system/product/lib64/vendor.qti.hardware.radio.ims@1.0.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.radio.ims@1.1.so:system/product/lib64/vendor.qti.hardware.radio.ims@1.1.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.radio.ims@1.2.so:system/product/lib64/vendor.qti.hardware.radio.ims@1.2.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.radio.ims@1.3.so:system/product/lib64/vendor.qti.hardware.radio.ims@1.3.so \
+    vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.radio.ims@1.4.so:system/product/lib64/vendor.qti.hardware.radio.ims@1.4.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/product/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/product/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/xiaomi/laurel_sprout/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/product/lib64/vendor.qti.hardware.perf@1.0.so \
@@ -50,5 +76,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm@1.0 \
     CNEService \
+    ims \
     QtiTelephonyService \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    uceShimService
