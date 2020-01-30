@@ -225,4 +225,5 @@ PRODUCT_PACKAGES += \
     ims \
     QtiTelephonyService \
     qcrilmsgtunnel \
-    uceShimService
+    uceShimService \
+    libplatformconfig
